@@ -9,3 +9,7 @@ How to use the Ontology:
 
 Demo Data:
 ![image](https://github.com/user-attachments/assets/08796d20-be36-4845-b781-ac42100b3d26)
+
+
+Graphical view of the ontology:
+![image](https://github.com/user-attachments/assets/85b1a639-ddcc-4cb8-96f4-4d022e0def41)
