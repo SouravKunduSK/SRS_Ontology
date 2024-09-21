@@ -1,0 +1,2686 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#"
+     xml:base="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:SRS_Ontology="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology">
+        <rdfs:comment>SRS ontology.
+180144,180148</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#belongsToFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#belongsToFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasFunctionalRequirement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasNonFunctionalRequirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#belongsToSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#belongsToSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasSection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Requirements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#describesRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#describesRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasAppendix -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasAppendix">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasExternalInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasExternalInterface">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasFunctionalRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasFunctionalRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasNonFunctionalRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasNonFunctionalRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Non-Functional_Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasObstacle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasObstacle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Limitation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Obstacle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasPriority -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasPriority">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasScenario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Scenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasTestCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasTestCase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#TestCase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasUseCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasUseCase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#UseCase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasUserClasses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasUserClasses">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isAlternativeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isAlternativeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isAuthoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isAuthoredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isConflictWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isConflictWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isElicitedByTechniqueOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isElicitedByTechniqueOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Elicitation_Technique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isNegativeContributionToGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isNegativeContributionToGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isPositiveContributionToGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isPositiveContributionToGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isValid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isValid">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#refinesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#refinesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#assumptionsAndDependencies -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#assumptionsAndDependencies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#content">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Elicitation_Technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#descriptionOfCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#descriptionOfCharacteristics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#designAndImplementationConstraints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#designAndImplementationConstraints">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#designation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#designation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#elicitedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#elicitedDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasOutput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasPriorityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasPriorityLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasScope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasScope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasStimulusOrResponseSequences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasStimulusOrResponseSequences">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasValidationState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hasValidationState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isValidated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#isValidated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#label">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Elicitation_Technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#lastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#middleName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#middleName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#operatingEnvironment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#operatingEnvironment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#productFunctions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#productFunctions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#productPerspective -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#productPerspective">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#purposeOfSystem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#purposeOfSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#targertedAudeience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#targertedAudeience">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#userClassesAndCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#userClassesAndCharacteristics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#userDocumentation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#userDocumentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#validationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#validationDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#BusinessRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#BusinessRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Business_Operation_Managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Business_Operation_Managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Communication_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Communication_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Consultants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Consultants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#ExternalCustomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#ExternalCustomers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Customers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Requirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hardware_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hardware_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#InternalCustomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#InternalCustomers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Customers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Limitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Limitation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Obstacle"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Marketing_People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Marketing_People">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Non-Functional_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Non-Functional_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Obstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Obstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Stakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Stakeholders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#PerformanceRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#PerformanceRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Product_Engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Product_Engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Product_Managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Product_Managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Elicitation_Technique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Elicitation_Technique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SafetyRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SafetyRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SecurityRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SecurityRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Source">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Support_and_Maintenance_Engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Support_and_Maintenance_Engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non-Functional_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#TestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#TestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Requirement_Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#UseCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#UseCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Story"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Access_to_sign_in -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Access_to_sign_in">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Access to sign in</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddAcademicQualification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddAcademicQualification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_all_the_entered_information_to_the_database"/>
+        <hasInput>Enter information about the qualification, including the title, institution, year of completion, grade, and status.</hasInput>
+        <hasOutput>Saves all the entered information to the database.</hasOutput>
+        <label>AddAcademicQualification</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddPersonalInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddPersonalInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_all_the_entered_information_to_the_database"/>
+        <hasInput>Enter personal information like name, date of birth, gender, phone number, national id and so on.</hasInput>
+        <hasOutput>Saves all the entered information to the database.</hasOutput>
+        <label>AddPersonalInfo</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Board_Date_and_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Board_Date_and_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_board_date_and_time_for_future_use."/>
+        <hasInput>Include the date and time that applicants arrived at the university for the exam.</hasInput>
+        <hasOutput>Saves board date and time for future use.</hasOutput>
+        <label>Add Board Date and Time</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_CS_Comment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_CS_Comment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_comments_to_identify_recommended_and_not_recommended_applicants"/>
+        <hasInput>Add cs comments on a particular applicant.</hasInput>
+        <hasOutput>Saves comments to identify recommended and not recommended applicants.</hasOutput>
+        <label>Add CS Comment</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Circular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Circular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_job_circular_to_show_on_home_page_for_job_seekers"/>
+        <hasInput>Select memorandum number, department, post name, closing date and enter circular link, application fee etc.</hasInput>
+        <hasOutput>Select memorandum number, department, post name, closing date and enter circular link, application fee etc.</hasOutput>
+        <label>Add Circular</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Department_Name -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Department_Name">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_department_name_for_future_use"/>
+        <hasInput>Enter department or section name.</hasInput>
+        <hasOutput>Saves department name for future use.</hasOutput>
+        <label>Add Department Name</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Job_Circular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Job_Circular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Circular"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Department_Name"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Memorandum_Number"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Post_Name"/>
+        <hasDescription>As a result, the circular admin to post a job circular, that is helpful to job searchers to the system. Here, the administrator enters circular-related data such as the circular&apos;s memorandum number, department and post names, the circular&apos;s link, the application deadline, the application cost, and so on.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Circular admin enters to the system and go to add circular page
+2. Submit requested information
+3. After validating the circular link, based on status job circular is published to the system</hasStimulusOrResponseSequences>
+        <label>Add Job Circular</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Memorandum_Number -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Memorandum_Number">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_memorandum_number_to_database_for_future_use"/>
+        <hasInput>Enter a unique memorandum number which will represent the job circular</hasInput>
+        <hasOutput>Saves memorandum number to database for future use</hasOutput>
+        <label>Add Memorandum Number</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Personal_Information_and_Academic_Qualification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Personal_Information_and_Academic_Qualification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddAcademicQualification"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#AddPersonalInfo"/>
+        <hasDescription>This allows jobseekers to add/update personal information and add/update/delete academic qualifications.Candidate can upload marksheet, academic certificate, training certificate, national id and so on.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Jobseekers enters into the update personal information form
+2. Provide information which he/she wants to add or change
+3. Jobseekers enters into add qualification form
+4. Provide requested information on that form</hasStimulusOrResponseSequences>
+        <label>Add Personal Information and Academic Qualification</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Post_Name -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Post_Name">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_post_name_for_future_use"/>
+        <hasInput>Enter post name.</hasInput>
+        <hasOutput>Saves post name for future use.</hasOutput>
+        <label>Add Post Name</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_requirement_to_database_and_perform_CS_based_on_requirements"/>
+        <hasInput>Add requirements for a job post.</hasInput>
+        <hasOutput>Saves requirement to database and perform CS based on requirements.</hasOutput>
+        <label>Add Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>View users 
+Update user
+Delete user
+Update applicants Info
+View and Download applicant’s picture
+View department seat status
+Close or Open admission</descriptionOfCharacteristics>
+        <label>Admin</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admission_closed_or_opened -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admission_closed_or_opened">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Admission closed or opened</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_successful_and_show_a_sign_on_steps_list"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_Finally"/>
+        <hasInput>Select all requirement done and show Admit button. Click on Admit button.</hasInput>
+        <hasOutput>Admit successful and show a sign on steps list.</hasOutput>
+        <label>Admit Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_successful_and_show_a_sign_on_steps_list -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_successful_and_show_a_sign_on_steps_list">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Admit successful and show a sign on steps list.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_Finally -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_Finally">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Admitted Finally</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_applicants_show_with_department_filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_applicants_show_with_department_filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Admitted applicants show with department filter.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#All_applicants_show_with_department_filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#All_applicants_show_with_department_filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>All applicants show with department filter.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>Appendix</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>Appendix</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. Create account
+2. Application Form Fill-up
+3. Update profile
+4. Generate and download Application Form</descriptionOfCharacteristics>
+        <label>Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Profile_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Profile_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_Account"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_Application_form"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Fill-_up_Application_form"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_Application_form"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Profile"/>
+        <hasDescription>In this section, Applicant can create account, update profile, Fill-up Application Form, Generate Application Form, Download Application Form, Send Edit Request etc.</hasDescription>
+        <hasStimulusOrResponseSequences>Applicant will
+1. Create account
+2. Login to the account and fill- up application form.
+3. After that download Application Form.</hasStimulusOrResponseSequences>
+        <label>Applicant Profile Management</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Rejected_successfully -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Rejected_successfully">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Applicant Rejected successfully.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_registered -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_registered">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Applicant registered.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_downloaded -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_downloaded">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Application Form downloaded.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_generated_and_show_Download_Application_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_generated_and_show_Download_Application_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Application Form generated and show Download Application Form.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_filled_and_show_generate_button -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_filled_and_show_generate_button">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Application filled and show generate button.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_goes_to_complete_approve_class -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_goes_to_complete_approve_class">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Approved applicants goes to complete approve class.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_show_with_department_filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_show_with_department_filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Approved applicants show with department filter.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Access_to_sign_in"/>
+        <hasInput>The user will enter the admin-given username and password for sign-in and Applicant will provide GSTApplicantID as username and password.</hasInput>
+        <hasOutput>access to sign in.</hasOutput>
+        <hasPriorityLevel>High</hasPriorityLevel>
+        <label>Authentication</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication_and_Authorization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication_and_Authorization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#EnterInformation"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#GenerateActivationLink"/>
+        <hasStimulusOrResponseSequences>1.Jobseekers enters into the registration form
+2. Provide valid email address and password
+3. An activation link is sent to given email address for account activation
+4. After verifying email they can login to the system</hasStimulusOrResponseSequences>
+        <label>This allows jobseekers to create accounts into our system providing their email and password.After verifying email they can login into the system.Different types of admin can login through this feature.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Circular_admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Circular_admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. Add a new department.
+2. Add a new memorandum number.
+3. Add a new post name.
+4. Add/Update/Delete job circular.</descriptionOfCharacteristics>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Close_or_Open_admission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Close_or_Open_admission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admission_closed_or_opened"/>
+        <hasInput>Click Close/Open button to close or open admission</hasInput>
+        <hasOutput>Admission closed or opened.</hasOutput>
+        <label>Close or Open admission</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Compatibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Compatibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <hasDescription>The system should be compatible with other systems and technologies that it may need to integrate with.</hasDescription>
+        <label>Compatibility</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_registered"/>
+        <hasInput>Applicant will input information and click on register button.</hasInput>
+        <hasOutput>Applicant registered.</hasOutput>
+        <label>Create Account</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_new_record -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_new_record">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Excel_file_downloaded"/>
+        <hasInput>Click Create new record. Select table columns and input a file name. Click download button.</hasInput>
+        <hasOutput>Excel file downloaded.</hasOutput>
+        <label>Create new record</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_deleted -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_deleted">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Data deleted</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_updated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_updated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Data updated.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. View all types of applicants List (All Applicants, Waited Applicants, Approved Applicants with complete document submission and pending document submission)
+2. Search applicant
+3. View Applicant profile
+4. Verify required documents JUST Undergraduate Final Admission System 
+5. Admit Applicant. (Dean Clearance)
+6. Reject Applicant
+7. View department seat status.
+8. Receive Pending document.
+9. Export Applicant data (All Applicants, Waited Applicants, Approved Applicants with complete document submission and pending document submission) in excel file</descriptionOfCharacteristics>
+        <label>Dean Office</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_Pending_document_applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Reject_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Application_Form"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Required_Documents"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Approved_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Pending_document_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_department_seat_status"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile"/>
+        <hasDescription>In this section, Dean Office can search applicant, show applicant profile, verify application form,verify required documents, admit applicant, Reject applicant. Dean office can also view all applicants, waited applicants and admitted applicants and also export the applicant list.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Dean office will continue admitting/ allowing students until all faculty seats are full.
+2. Dean office can reject Application if diagnose any error, cheating or violations of rules.</hasStimulusOrResponseSequences>
+        <label>Dean Office Management</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Delete_Users -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Delete_Users">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_deleted"/>
+        <hasInput>Click on table data and go to delete page. Click delete button.</hasInput>
+        <hasOutput>Data deleted.</hasOutput>
+        <label>Delete Users</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Developers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Developers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Engineers"/>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Documents_received -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Documents_received">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Documents received.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_Application_form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_Application_form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_downloaded"/>
+        <hasInput>Click download application form button.</hasInput>
+        <hasOutput>Application Form downloaded.</hasOutput>
+        <label>Download Application form</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_official_record_in_pdf_file -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_official_record_in_pdf_file">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pdf_file_downloaded"/>
+        <hasInput>Click on Export pdf button.</hasInput>
+        <hasOutput>Pdf file downloaded.</hasOutput>
+        <label>Download official record in pdf file</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#EnterInformation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#EnterInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#forms_are_saved_to_a_database_and_GenerateActivationLink_is_called"/>
+        <hasInput>According to the instructions on the registration form, the user enters their email and password. A valid email address must be entered for authentication purposes.</hasInput>
+        <hasOutput>forms are saved to a database and GenerateActivationLink is called.</hasOutput>
+        <label>EnterInformation</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Excel_file_downloaded -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Excel_file_downloaded">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Excel file downloaded.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>External Interface Requirement</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>External Interface Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Fill-_up_Application_form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Fill-_up_Application_form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_filled_and_show_generate_button"/>
+        <hasInput>Give all input of application steps and click submit button.</hasInput>
+        <hasOutput>Application filled and show generate button.</hasOutput>
+        <label>Fill- up Application form</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Flexibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Flexibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <hasDescription>Highly flexible for the users to perform all kinds of activities</hasDescription>
+        <label>Flexibility</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#GenerateActivationLink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#GenerateActivationLink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#The_user&apos;s_registration_was_successful"/>
+        <hasObstacle rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#If_the_user&apos;s_email_is_invalid,_they_cannot_login_to_the_system."/>
+        <hasInput>In order to authenticate users for future logins, the system creates a unique activation link that is sent to the email address.</hasInput>
+        <hasOutput>The user&apos;s registration was successful.</hasOutput>
+        <label>GenerateActivationLink</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_Application_form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_Application_form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Application_Form_generated_and_show_Download_Application_Form"/>
+        <hasInput>Click generate button.</hasInput>
+        <hasOutput>Application Form generated and show Download Application Form.</hasOutput>
+        <label>Generate Application form</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_and_print_report -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_and_print_report">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Printed_medical_report"/>
+        <hasInput>Click on print icon to print and generate medical report.</hasInput>
+        <hasOutput>Printed medical report.</hasOutput>
+        <label>Generate and print report</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. View all types of applicants List (Waited Applicants, Admitted Applicants)
+2. Search applicant
+3. View Applicant profile
+4. Receive bank receipt
+5. Admit Applicant. (Hall Clearance)
+6. Export Applicant data (Waited Applicants, Admitted Applicants) in excel file.
+7. Download official record in pdf file.</descriptionOfCharacteristics>
+        <label>Hall Office</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_official_record_in_pdf_file"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_bank_receipt"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Admitted_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile"/>
+        <hasDescription>In this section, Hall Office can search applicant, show applicant profile, receive bank receipt, admit applicant. Hall office can also view waited applicants and admitted applicants and also export the applicant list.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Hall office will continue admitting/ allowing students permitted by dean office.</hasStimulusOrResponseSequences>
+        <label>Hall Office Management</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Integration_with_the_Existing_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Integration_with_the_Existing_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_University_Admission_System"/>
+        <hasDescription>The automated admission system will need to be able to access and retrieve data and other assets from the existing system or platform, and may also need to be able to write data back to the existing system in certain cases.</hasDescription>
+        <label>Integration with the Existing System</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <hasScope>The purpose of the online job application of JUST is to ease the hiring system and to create a convenient and easy-to-use application for university and jobseekers.</hasScope>
+        <label>Introduction</label>
+        <purposeOfSystem>The main purpose of the system is to automate the Job Application of Just.</purposeOfSystem>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>Introduction</label>
+        <purposeOfSystem>The main purpose of this Undergraduate Final Admission System is to make the final admission easier and smoother</purposeOfSystem>
+        <targertedAudeience>The main audience of this document is the admission committee, project supervisor, honorable chairman of Computer Science and Engineering department, viva board teachers (Internal and External), the next version developer and who are instated to know about this system.</targertedAudeience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Job_manager_admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Job_manager_admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. See applicants who applied in his department/section.
+2. Perform CS of all applicants and submit CS to registrar.
+3. Can add requirements for the post.</descriptionOfCharacteristics>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Jobseekers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Jobseekers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. See available jobs.
+2. Add/Update personal information.
+3. Add/Update/Delete qualifications, experiences, training, publications, documents.
+4. Pay fees using online payment gateway.</descriptionOfCharacteristics>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. View all types of applicants List (Waited Applicants, Admitted Applicants)
+2. Search applicant
+3. View Applicant profile
+4. Insert Physical Examination data
+5. Admit Applicant. (Medical Clearance)
+6. Export Applicant data (Waited Applicants, Admitted Applicants) in excel file.
+7. Download official record in pdf file.</descriptionOfCharacteristics>
+        <label>Medical Office</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Download_official_record_in_pdf_file"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Generate_and_print_report"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Admitted_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Insert/_Update_Medical_Info"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile"/>
+        <hasDescription>In this section, Medical Office can search applicant, show applicant profile, insert medical info,generate and print report, admit applicant. Medical office can also view waited applicants and dmitted applicants and also export the applicant list.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Medical office will continue admitting/ allowing students permitted by dean office.</hasStimulusOrResponseSequences>
+        <label>Medical Office Management</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Circular_admin"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Developers"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Job_manager_admin"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Jobseekers"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_admin"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Super_admin"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Operator"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#University"/>
+        <assumptionsAndDependencies>1. Each user must have a valid email and password.
+2. Users must log in to the system to access any record.
+3. Only the Admin can delete records.</assumptionsAndDependencies>
+        <designAndImplementationConstraints>The online job application of JUST shall be a web based application system. A person who 
+has no knowledge of computers will find it difficult to understand the system. But with a little 
+knowledge it will be very easy to handle the project. This will be a web based application. So, 
+it is not easy to implement a web based application.</designAndImplementationConstraints>
+        <hasDescription>Detail description will go here. As: Technical Research, Existing Application, Potential Customer Identification.</hasDescription>
+        <label>Overall Description</label>
+        <operatingEnvironment>1. Operating System: Windows, Linux, MacOS
+2. Database: MySQL
+3. Programming Language: Python
+4. Development environment: Visual Studio Code</operatingEnvironment>
+        <userDocumentation>1. Help pages will be providing documents with screenshots.
+2. If the user has more queries regarding this website then he/she can contact the administrator through the support email which will be given in the footer section</userDocumentation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admin"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office"/>
+        <hasUserClasses rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office"/>
+        <designAndImplementationConstraints>React.js, Bootstrap is used for Frontend Design.
+Node.js, Express.js is used for the Backend server.
+MSSQL server is used as database.</designAndImplementationConstraints>
+        <label>Overall Description</label>
+        <operatingEnvironment>The “JUST Undergraduate Final Admission System” can work properly in any Operating System (OS) like windows, android and so on.</operatingEnvironment>
+        <productFunctions>Main functions of the software product will go here.</productFunctions>
+        <productPerspective>1. The ability to automatically admit applicants to a new system based on predefined criteria or rules.
+2. The ability to automatically process data from the old system or platform to the new one.</productPerspective>
+        <userClassesAndCharacteristics>User classes and characterstics will go here.</userClassesAndCharacteristics>
+        <userDocumentation>User documentation will go here.</userDocumentation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pdf_file_downloaded -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pdf_file_downloaded">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Pdf file downloaded.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pending_document_applicants_show_with_department_filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pending_document_applicants_show_with_department_filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Pending document applicants show with department filter.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Perform_and_Submit_CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Perform_and_Submit_CS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_CS_Comment"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Requirements"/>
+        <hasDescription>Job manager admin can see applicants who applied to his department or section.He can add requirements for circular.He can perform CS and submit planning file to registrar admin.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Go to the applicants page and select a particular applicant to perform CS.
+2. Write CS comments to recommend or not recommend applicants.
+3. Submit CS with uploading a planning file.</hasStimulusOrResponseSequences>
+        <label>Perform and Submit CS</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Performance_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Performance_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#PerformanceRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <label>Performance Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Physical_examination_data_submitted -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Physical_examination_data_submitted">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Physical examination data submitted.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Picture_downloaded -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Picture_downloaded">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Picture downloaded</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <hasDescription>There is no dependency on a particular Operation System.</hasDescription>
+        <label>Portability</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Printed_medical_report -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Printed_medical_report">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Printed medical report.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Profile_updated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Profile_updated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Profile updated.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_Pending_document_applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_Pending_document_applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_goes_to_complete_approve_class"/>
+        <hasInput>Click ok button.</hasInput>
+        <hasOutput>Approved applicants goes to complete approve class.</hasOutput>
+        <label>Receive Pending document applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_bank_receipt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_bank_receipt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_received_in_green_color"/>
+        <hasInput>Click on Receipt receive button.</hasInput>
+        <hasOutput>Show received in green color.</hasOutput>
+        <label>Receive bank receipt</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_documents -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_documents">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Documents_received"/>
+        <hasInput>select verified documents and click receive document button.</hasInput>
+        <hasOutput>Documents received.</hasOutput>
+        <label>Receive documents</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. View all types of applicants List (All Applicants, Waited Applicants, Admitted Applicants)
+2. Search applicant
+3. View Applicant profile
+4. Receive documents.
+5. Generate and download Receive document proof copy.
+6. Finally Admit Applicant.
+7. Export Applicant data (All applicants, Waited Applicants, Admitted Applicants, Pending document) in excel file.
+8. View department seat status.
+9. Receive Pending document.
+10. Create new record.</descriptionOfCharacteristics>
+        <label>Registrar Office</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admit_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Create_new_record"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_Pending_document_applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Receive_documents"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Admitted_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Pending_document_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_Applicant"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_department_seat_status"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile"/>
+        <hasDescription>In this section, Registrar Office can search applicant, show applicant profile, Receive documents, admit applicant. Registrar office can also view all applicants, view waited applicants and admitted applicants and also export the applicant list.</hasDescription>
+        <hasStimulusOrResponseSequences>Registrar office will until all seats of all departments are not filled.</hasStimulusOrResponseSequences>
+        <label>Registrar Office Management</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. Send admit cards to recommended applicants.
+2. Download planning file which was submitted by job manager admin.
+3. Can see recommended/not recommended applicants.
+4. Can send for CS again.</descriptionOfCharacteristics>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Reject_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Reject_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Rejected_successfully"/>
+        <hasInput>Click on Reject button.</hasInput>
+        <hasOutput>Applicant Rejected successfully.</hasOutput>
+        <label>Reject Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <hasDescription>The system should be reliable and have high uptime.</hasDescription>
+        <label>Reliability</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_Online_Job_Application_of_JUST"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_Online_Job_Application_of_JUST"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_Online_Job_Application_of_JUST"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST"/>
+        <label>SRS of Online Job Application of JUST.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_for_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_for_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SRS_Document"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_University_Admission_System"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_University_Admission_System"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Introduction_University_Admission_System"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_University_Admission_System"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <label>SRS for University Admission System</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Safety_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Safety_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SafetyRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <label>Safety Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_all_the_entered_information_to_the_database -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_all_the_entered_information_to_the_database">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves all the entered information to the database.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_board_date_and_time_for_future_use. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_board_date_and_time_for_future_use.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves board date and time for future use.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_comments_to_identify_recommended_and_not_recommended_applicants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_comments_to_identify_recommended_and_not_recommended_applicants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves comments to identify recommended and not recommended applicants.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_department_name_for_future_use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_department_name_for_future_use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves department name for future use.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_job_circular_to_show_on_home_page_for_job_seekers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_job_circular_to_show_on_home_page_for_job_seekers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves job circular to show on home page for job seekers.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_memorandum_number_to_database_for_future_use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_memorandum_number_to_database_for_future_use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves memorandum number to database for future use</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_post_name_for_future_use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_post_name_for_future_use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves post name for future use.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_requirement_to_database_and_perform_CS_based_on_requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Saves_requirement_to_database_and_perform_CS_based_on_requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Saves requirement to database and perform CS based on requirements.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Search_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_search_result"/>
+        <hasInput>The user will enter the applicant’s GSTApplicationID or GSTRoll and click on search button</hasInput>
+        <hasOutput>Show search result. If search successful then show result otherwise show Applicant not found</hasOutput>
+        <label>Search Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Security_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Security_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SecurityRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System"/>
+        <label>Security Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Send_Admit_Card -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Send_Admit_Card">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Board_Date_and_Time"/>
+        <hasDescription>Registrar admin can send admit cards to recommend applicants.Before sending admit card he has to enter board date, time and dispatch number.</hasDescription>
+        <hasStimulusOrResponseSequences>1. Go to CS Done page and click on the Send Admit button
+2. This will show number of applicants applied for the post and number of selected applicants
+3. Enter board date, time and dispatch number
+4. Click on the Send button. System will send an electrically generated admit card to recommend applicants.</hasStimulusOrResponseSequences>
+        <label>Send Admit Card</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant_profile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant_profile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Show Applicant profile.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Application_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Application_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Show Application Form.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_correct_sign_if_verify_successful -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_correct_sign_if_verify_successful">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Show correct sign if verify successful.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_received_in_green_color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_received_in_green_color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Show received in green color.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_search_result -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_search_result">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Show search result.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Super_admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Super_admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#End_Users"/>
+        <descriptionOfCharacteristics>1. Add/Remove circular admin, job manager admin and registrar admin.
+2. Add/Remove Document types.
+3. Add a new memorandum number, department and post name.</descriptionOfCharacteristics>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Job_Circular"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Add_Personal_Information_and_Academic_Qualification"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication_and_Authorization"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#GenerateActivationLink"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Perform_and_Submit_CS"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Send_Admit_Card"/>
+        <label>System Feature</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Applicant_Profile_Management"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Dean_Office_Management"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hall_Office_Management"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Medical_Office_Management"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Registrar_Office_Management"/>
+        <hasFeature rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Management_by_Admin"/>
+        <label>System Features</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Other_Stakeholders"/>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>NonFunctional Requirement</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Document_s_Section"/>
+        <label>Other Nonfunctional Requirements</label>
+        <label>Performance Requirement</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#University -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#InternalCustomers"/>
+        <label>Stakeholder</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Profile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Profile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Profile_updated"/>
+        <hasInput>Give updated input and click update button.</hasInput>
+        <hasOutput>Profile updated.</hasOutput>
+        <label>Update Profile</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Users -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Users">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_updated"/>
+        <hasInput>Click on table data and go to update page. 
+Update data and click update button.</hasInput>
+        <hasOutput>Data updated.</hasOutput>
+        <label>Update Users</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interfaces_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interfaces_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST"/>
+        <content>1 Register Interface
+This interface should have two input fields, one for email and another for password.Should 
+have a register button through which jobseekers can register.
+2 Login Interface
+There should be two input fields on this interface: one for passwords and one for emails. 
+should have a login option that allows users to sign in.
+3 Add Qualification Interface
+Five input fields should be included on this interface: one for the qualification title, one for 
+the institution, one for the result, one for the status, and one for the passing year. A button to 
+save information must be included</content>
+        <hasDescription>Our application&apos;s user interface will be intuitive and simple to use. Since our application is 
+intended for all people over the world, English is the language used.The user is also needed to 
+understand how to use internet and browse in online, be able to upload images and 
+documents, and be able to utilize buttons.Any browser, including Internet Explorer, Mozilla, 
+Chrome and Netscape Navigator, that a user uses to access the system should be able to use 
+the software&apos;s user interface.</hasDescription>
+        <label>User Interfaces</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interfaces_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interfaces_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#External_Interface_Requirement_University_Admission_System"/>
+        <hasDescription>The automated admission system will typically include a user interface that allows administrators to configure and manage the system. This interface must be easy to use and intuitive, with clear instructions and guidance for administrators. User interfaces should be designed by following access level of users.</hasDescription>
+        <label>User Interface</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Management_by_Admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#User_Management_by_Admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Feature"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#System_Features_University_Admission_System"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Authentication"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Close_or_Open_admission"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Delete_Users"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_Users"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Users"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_department_seat_status"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_applicant’s_info"/>
+        <hasFunctionalRequirement rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_and_Download_applicant’s_picture"/>
+        <hasDescription>This allows fixed users to get access to the system as central admin, dean office, hall office, medical center, register office, Applicant Page. The users can access the system with their admin-permitted given Username. The admin controls the dean office, hall office, medical center, register office and Applicant Page Information.</hasDescription>
+        <hasPriorityLevel>High</hasPriorityLevel>
+        <hasStimulusOrResponseSequences>1. Users enter their given admin username and password in the sign in field. 
+2. The system stores detailed information about the users and provides access to sign-in in the system.
+3. After logout button click user navigate back to login page</hasStimulusOrResponseSequences>
+        <label>User Management by Admin</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Application_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Application_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Application_Form"/>
+        <hasInput>Click on Verify Applicant Form.</hasInput>
+        <hasOutput>Show Application Form.</hasOutput>
+        <label>Verify Application Form</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Required_Documents -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Verify_Required_Documents">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_correct_sign_if_verify_successful"/>
+        <hasInput>Select required documents and click on verify button.</hasInput>
+        <hasOutput>Show correct sign if verify successful.</hasOutput>
+        <label>Verify Required Documents</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Admitted_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Admitted_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Admitted_applicants_show_with_department_filter"/>
+        <hasInput>Click on Admitted applicant button.</hasInput>
+        <hasOutput>Admitted applicants show with department filter.</hasOutput>
+        <label>View Admitted Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Approved_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Approved_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Approved_applicants_show_with_department_filter"/>
+        <hasInput>Click on Approved applicant button.</hasInput>
+        <hasOutput>Approved applicants show with department filter.</hasOutput>
+        <label>View Approved Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Pending_document_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Pending_document_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Pending_document_applicants_show_with_department_filter"/>
+        <hasInput>Click on Pending document applicant button.</hasInput>
+        <hasOutput>Pending document applicants show with department filter.</hasOutput>
+        <label>View Pending document Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Users -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Users">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_waited_and_admitted_user"/>
+        <hasInput>Click on sidebar links (All Applicants, Waited Applicants, Admitted Applicants)</hasInput>
+        <hasOutput>View all, waited and admitted user</hasOutput>
+        <hasPriorityLevel>High</hasPriorityLevel>
+        <label>View Users</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_Waited_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Waited_applicants_show_with_department_filter"/>
+        <hasInput>Click on Waited applicant button.</hasInput>
+        <hasOutput>Waited applicants show with department filter.</hasOutput>
+        <label>View Waited Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_Applicant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_Applicant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#All_applicants_show_with_department_filter"/>
+        <hasInput>Click on All applicant button.</hasInput>
+        <hasOutput>All applicants show with department filter.</hasOutput>
+        <label>View all Applicant</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_waited_and_admitted_user -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_all_waited_and_admitted_user">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>View all waited and admitted user</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_department_seat_status -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_department_seat_status">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_no._of_seats_admitted_and_empty"/>
+        <hasInput>Click on Department Seats Status.
+Here select department from select option.</hasInput>
+        <hasOutput>View no. of seats admitted and empty.</hasOutput>
+        <label>View department seat status</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_no._of_seats_admitted_and_empty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_no._of_seats_admitted_and_empty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>View no. of seats admitted and empty</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Waited_applicants_show_with_department_filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Waited_applicants_show_with_department_filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>Waited applicants show with department filter.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#communication_Interfaces_Online_Job_Application_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#communication_Interfaces_Online_Job_Application_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Communication_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST"/>
+        <hasDescription>The communication is done through the internet.The product needs network server communications to allow the administrator to communicate with logged-in users and respond to their requests. Data is sent by a number of software components as bit or intensitymatrices. FTP is the accepted communication standard. Additionally included are customary 
+security measures.</hasDescription>
+        <label>Communication Interfaces</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#forms_are_saved_to_a_database_and_GenerateActivationLink_is_called -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#forms_are_saved_to_a_database_and_GenerateActivationLink_is_called">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>forms are saved to a database and GenerateActivationLink is called.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#glosaryAppendix_Online_Job_Application_of_JUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#glosaryAppendix_Online_Job_Application_of_JUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_Online_Job_Application_of_JUST"/>
+        <content>DB: Database
+CS: Comparative Studies
+ER: Entity Relationship
+OS: Operating System</content>
+        <label>Glossary</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#glossaryAppendix_University_Admission_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#glossaryAppendix_University_Admission_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Appendix_University_Admission_System"/>
+        <content>SRS: Software Requirement Specification</content>
+        <label>Glossary</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hardware_Interfaces_Online_Job_Application_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#hardware_Interfaces_Online_Job_Application_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Hardware_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST"/>
+        <hasDescription>1. Processor: Intel core i7
+2. Processor speed: 3.40 GHz
+3. RAM: 8 GB</hasDescription>
+        <label>Hardware Interfaces</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#performanceRequirementofOJASJUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#performanceRequirementofOJASJUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#PerformanceRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST"/>
+        <label>Performance Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#safetyRequirementofOJASJUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#safetyRequirementofOJASJUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SafetyRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST"/>
+        <label>Safety Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#securityRequirementofOJASJUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#securityRequirementofOJASJUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SecurityRequirement"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST"/>
+        <label>Security Requirements</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#softdware_Interfaces_Online_Job_Application_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#softdware_Interfaces_Online_Job_Application_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Software_Interface"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Overall_Description_Online_Job_Application_of_JUST"/>
+        <hasDescription>1. Operating System: Windows 10
+2. IDE: Visual Studio Code
+3. Application Server: Django Development Server
+4. Frameworks: Django 3.2
+5. Database: MySQL
+6. Front End: HTML5, CSS3, JavaScript, jQuery
+7. Browser: Chrome or Firefox or Internet Explorer
+8. Libraries: PyPDF2 3.0.0, sslcommerz-python 0.0.7, Advanced Python Scheduler</hasDescription>
+        <label>Software Interfaces</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#softwareQualityAttributesOJASJUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#softwareQualityAttributesOJASJUST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#SoftwareQualityAttribute"/>
+        <belongsToSection rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Systems_Other_Non_Functional_Requirement_Online_Job_Application_of_JUST"/>
+        <hasDescription>1. Reliability: Good validations of user inputs will be done to avoid incorrect storage of records.
+2. Availability: The system shall be available all the time.
+3. Maintainability: During the maintenance stage, SRS documents can be referred for any validations.
+4. Portability: This system is not dependent on any particular OS.
+5. Flexibility: The system keeps on updating the data according to the transactions that take place.
+6. Security: Security of the system is maintained by giving access to only authenticated user email and password.</hasDescription>
+        <label>Software Quality Attributes</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#If_the_user&apos;s_email_is_invalid,_they_cannot_login_to_the_system. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#If_the_user&apos;s_email_is_invalid,_they_cannot_login_to_the_system.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Obstacle"/>
+        <label>&apos;If the user&apos;s email is invalid, they cannot login to the system.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Insert/_Update_Medical_Info -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Insert/_Update_Medical_Info">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Physical_examination_data_submitted"/>
+        <hasInput>input all physical examination info and click submit button.</hasInput>
+        <hasOutput>Physical examination data submitted.</hasOutput>
+        <label>Insert/ Update Medical Info</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant’s_Profile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Show_Applicant_profile"/>
+        <hasInput>Click on Applicant Profile.</hasInput>
+        <hasOutput>Show Applicant profile.</hasOutput>
+        <label>Show Applicant’s Profile</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#The_user&apos;s_registration_was_successful -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#The_user&apos;s_registration_was_successful">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Goal"/>
+        <label>The user&apos;s registration was successful.</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_applicant’s_info -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Update_applicant’s_info">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Data_updated"/>
+        <hasInput>Click on table data and go to update page. 
+Update data and click update button.</hasInput>
+        <hasOutput>Data updated.</hasOutput>
+        <label>Update applicant&apos;s info</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_and_Download_applicant’s_picture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#View_and_Download_applicant’s_picture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Functional_Requirement"/>
+        <hasGoal rdf:resource="http://www.semanticweb.org/anikd/ontologies/2024/0/SRS_Ontology#Picture_downloaded"/>
+        <hasInput>Click on download button on picture and download picture.
+Also click on zip download button to download zip file of all pictures.</hasInput>
+        <hasOutput>Picture downloaded.</hasOutput>
+        <label>View and Download applicant’s picture</label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
